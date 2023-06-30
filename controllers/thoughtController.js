@@ -98,7 +98,7 @@ module.exports = {
         return res.status(404).json({ message: "No thought found." });
       }
 
-      res.json(reaction);
+      res.json(thought.reactions);
     } catch (err) {
       res.status(500).json(err);
     }
